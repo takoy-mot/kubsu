@@ -1,3 +1,11 @@
-.vs/ 
-lab1/*
-!lab1/**/*.cpp
+*
+
+!*/
+!*/*/
+
+!README.md
+!LICENSE
+
+!**/*.cpp
+
+!.gitignore

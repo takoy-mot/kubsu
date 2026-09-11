@@ -1,11 +1,6 @@
 *
 
-!*/
-!*/*/
-
 !README.md
 !LICENSE
-
-!**/*.cpp
-
 !.gitignore
+!*.cpp

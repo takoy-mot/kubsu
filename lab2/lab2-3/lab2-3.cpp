@@ -13,15 +13,15 @@ int main()
 	std::cin >> k;
 	switch (k)
 	{
-	case 1: f = sinh(x); break;
-	case 2: f = pow(x, 2); break;
-	case 3: f = exp(x); break;
+	case 1: f = std::sinh(x); break;
+	case 2: f = x * x; break;
+	case 3: f = std::exp(x); break;
 	default: std::cout << "F not choosen"; return 1;
 	}
 	a = x - y;
-	if (a == 0) s = pow(f, 2) + pow(y, 1.0 / 3.0) + sin(y);
-	else if (a > 0) s = pow(f - y, 2) + log(x);
-	else s = pow(y - f, 2) + tan(y);
+	if (a == 0) s = f * f + std::cbrt(y) + std::sin(y);
+	else if (a > 0) s = std::pow(f - y, 2) + std::log(x);
+	else s = std::pow(y - f, 2) + std::tan(y);
 	std::cout << "Result s = " << s << std::endl;
 	return 0;
 }
